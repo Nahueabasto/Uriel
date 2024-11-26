@@ -112,6 +112,15 @@
       display: none;
   }
 
+  .icons{
+    display: none;
+  }
+
+  .logo-container {
+      justify-content: flex-end; /* Alinea el logo a la derecha */
+      width: 100%; /* Asegúrate de que ocupe todo el ancho */
+  }
+
   .nav-menu {
       list-style: none;
       flex-direction: column;
@@ -160,7 +169,9 @@
   }
 
   .hamburguer {
-      display: initial;
+    display: flex; /* Asegúrate de que el contenedor sea flexible */
+    margin-left: auto; /* Empuja el ícono hamburguesa a la derecha */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
   }
 
   .contact-info {

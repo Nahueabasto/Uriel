@@ -6,6 +6,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
+import img from "../img/logo.png"
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -40,9 +41,11 @@ const Navbar = () => {
   return (
     <div className={color ? "header header-bg" : "header"}>
       <Link to="/">
-        <h1 className="portfolio-title">pipa</h1>
+        <div className="logo-container">
+          <img className="logoeco" src={img} alt="EcoEcho" width="50" height="50" />
+        </div>
       </Link>
-
+  
       <div className="hamburguer" onClick={handleClick}>
         {click ? (
           <CloseIcon size={30} style={{ color: "#fff" }} />
@@ -50,7 +53,7 @@ const Navbar = () => {
           <MenuIcon size={30} style={{ color: "#fff" }} />
         )}
       </div>
-
+  
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
           <Link to="/" onClick={handleClick} className="nav-link">Inicio</Link>
@@ -61,24 +64,21 @@ const Navbar = () => {
         <li>
           <Link to="/about" onClick={handleClick} className="nav-link">Sobre mi</Link>
         </li>
-
-        {/* Sección de contacto solo visible en el menú hamburguesa */}
         {click && (
-
           <div className="contact-info">
             <div className="seguinos">
-            <p>Seguinos</p>
-            <p> <InstagramIcon style={{ color: "#fff", marginRight: "0.2rem", marginBottom: "10px" }} />  </p>
+              <p>Seguinos</p>
+              <p><InstagramIcon style={{ color: "#fff", marginRight: "0.2rem", marginBottom: "10px" }} /></p>
             </div>
             <div className="contactanos">
-            <p>Contactanos</p>
-            <p><EmailIcon style={{ color: "#fff", marginRight: "0.2rem",  }} /> @gmail.com</p>
-            <p><WhatsAppIcon style={{ color: "#fff", marginRight: "0.2rem"}} />333333333</p>
+              <p>Contactanos</p>
+              <p><EmailIcon style={{ color: "#fff", marginRight: "0.2rem" }} /> @gmail.com</p>
+              <p><WhatsAppIcon style={{ color: "#fff", marginRight: "0.2rem" }} />333333333</p>
             </div>
           </div>
         )}
       </ul>
-
+  
       <div className="icons">
         <a href="" target="_blank" rel="noopener noreferrer">
           <WhatsAppIcon className="mui" size={20} style={{ color: "#fff", fontSize: "large", marginRight: "1rem" }} />
