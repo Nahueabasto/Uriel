@@ -1,128 +1,119 @@
 .header {
-  display: grid; 
-  grid-template-columns: auto 1fr auto;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0rem 4rem;
-  position: fixed;
-  width: 100%;
-  height: 90px;
-  z-index: 10;
-  background-color: #FFD700;
-}
-
-.logo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.tagline {
-  margin-top: 0rem;
-  font-size: 1rem;
-  color: #fff;
-}
-
-.header-bg {
-  background-color: #d2b48c;
-  transition: 0.5s;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-menu li {
-  padding: 0 2rem;
-  font-weight: 500;
-  border-bottom: 1px solid #fff; /* Línea entre los elementos de la lista */
-}
-
-.nav-menu li:first-child {
-  border-top: 1px solid #fff; /* Línea por arriba del primer elemento */
-}
-
-.nav-menu li:last-child {
-  border-bottom: 1px solid #fff; /* Línea por debajo del último elemento */
-}
-
-.nav-menu li a {
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #fff;
-}
-
-.nav-menu li a:hover {
-  color: #3f2a1d;
-}
-
-.icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.icons .mui {
-  color: #fff;
-}
-
-.hamburguer {
-  display: none;
-}
-
-.menu-bar-mobile {
-  display: none;
-}
-
-.nav-menu-mobile {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  background-color: #d2b48c;
-}
-
-.nav-menu-mobile li {
-  padding: 1rem;
-  border-bottom: 1px solid #fff; /* Línea entre los elementos de la lista */
-}
-
-.nav-menu-mobile li:first-child {
-  border-top: 1px solid #fff; /* Línea por arriba del primer elemento */
-}
-
-.nav-menu-mobile li:last-child {
-  border-bottom: 1px solid #fff; /* Línea por debajo del último elemento */
-}
-
-.nav-menu-mobile li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.portfolio-title {
-  display: block;
-}
-
-@media screen and (max-width: 881px) {
-  .header {
-      padding: 0rem 2rem;
+    display: grid; 
+    grid-template-columns: auto 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 4rem;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 10;
+    background-color: #FFD700;
   }
-
-  .portfolio-title {
-      display: none;
+  
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-
+  
+  .tagline {
+    margin-top: 0rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .header-bg {
+    background-color: #d2b48c;
+    transition: 0.5s;
+  }
+  
   .nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+
+  }
+  
+  .nav-menu li {
+    padding: 0 2rem;
+    /* margin-top: 10px; */
+    font-weight: 500;
+  }
+  
+  .nav-menu li a {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+   
+  }
+  
+  .nav-menu li a:hover {
+    color: #3f2a1d;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+    /* margin-left: auto; */
+    align-items: center;
+  
+  }
+  
+  .icons .mui {
+    color: #fff;
+  }
+  
+  /* Oculta el menú hamburguesa en pantallas grandes */
+  .hamburguer {
+    display: none;
+  }
+  
+  /* Barra del menú hamburguesa solo visible en pantallas pequeñas */
+  .menu-bar-mobile {
+    display: none;
+  }
+  
+  /* Menú móvil desplegable */
+  .nav-menu-mobile {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #d2b48c;
+  }
+  .nav-menu li:last-child {
+    border-bottom: 1px solid #fff; /* Línea en la parte inferior del último li */
+}
+ 
+  
+  .nav-menu-mobile li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .portfolio-title {
+    display: block; /* Asegúrate de que el título se muestre en pantallas grandes */
+  }
+  
+  /* Estilos para pantallas pequeñas */
+
+  @media screen and (max-width: 881px) {
+    .header {
+      padding: 0rem 2rem;
+      
+    }
+    .portfolio-title {
+      display: none; /* Oculta el h1 en pantallas pequeñas */
+    }
+    .nav-menu {
       list-style: none;
       flex-direction: column;
       justify-content: flex-start;
@@ -136,48 +127,46 @@
       z-index: -3;
       transition: 0.3s;
       padding-top: 100px;
-  }
-
-  .nav-menu.active {
+    }
+  
+    .nav-menu.active {
       left: 0;
-  }
-
+      
+    }
+  
   .nav-menu li {
-      padding: 0 0rem;
-      font-size: 2rem;
-      margin-right: auto;
-      margin-left: 0px;
-      width: 100%;
-      border-bottom: 1px solid #fff; /* Línea entre los elementos de la lista */
-  }
+  /* border-bottom: 1px solid #fff; */
+  /* padding: 0.5rem 0; */
+  padding: 0 0rem;
+  font-size: 2rem;
+  margin-right: auto;
+  margin-left: 0px;
+  width: 100%;
+    }
 
-  .nav-menu li:first-child {
-      border-top: 1px solid #fff; /* Línea por arriba del primer elemento */
-  }
-
-  .nav-menu li:last-child {
-      border-bottom: 1px solid #fff; /* Línea por debajo del último elemento */
-  }
-
-  .nav-menu li .nav-link {
-      padding: 1rem;
-      width: 100%;
+    .nav-menu li .nav-link {
+      padding: 1rem; 
+      width: 100%; 
       font-size: 1.1rem;
       font-weight: bold;
       text-decoration: none;
       color: #fff;
       display: block;
+      border-top: 1px solid #fff;
   }
-
-  .hamburguer {
+  .nav-menu li:last-child {
+    border-bottom: 1px solid #fff; /* Línea en la parte inferior del último li */
+}
+    .hamburguer {
       display: initial;
-  }
-
-  .contact-info {
+    }
+    .contact-info {
       padding: 1rem;
-      background-color: #333333;
-      color: #fff;
+      background-color: #333333; /* Color de fondo para la sección de contacto */
+      color: #fff; /* Color del texto */
+      
       margin-right: auto;
       margin-left: 0px;
+    }
   }
-}
+  
