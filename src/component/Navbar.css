@@ -107,6 +107,10 @@
   /* Estilos para pantallas pequeñas */
 
   @media screen and (max-width: 881px) {
+    .header {
+      padding: 0rem 2rem;
+      
+    }
     .portfolio-title {
       display: none; /* Oculta el h1 en pantallas pequeñas */
     }
