@@ -1,0 +1,82 @@
+.footer {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #333333;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    align-items: flex-start;
+    text-align: center;
+    
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 35%; /* Ajusta el valor según sea necesario */
+    padding-right: 35%; /* Ajusta el valor según sea necesario */
+    box-sizing: border-box;
+  } 
+
+  .icon {
+    display: flex;
+    flex-direction: row; /* Establece la dirección de fila para los iconos */
+    justify-content: center; /* Alinea los iconos al centro horizontalmente */
+    margin-top: 5px; /* Ajusta el margen superior según sea necesario */
+  }
+  
+  .location {
+    display: flex;
+    margin-bottom: 0.8rem;
+  }
+  
+  .location p {
+    line-height: 30px;
+    
+  }
+  
+  .right {
+    /* margin-left: 20px; */
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-left: 5%; /* Ajusta el valor según sea necesario */
+    padding-right: 5%;
+  }
+  
+  h4 {
+    font-size: 1.1rem;
+    padding-bottom: 0.7rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  p {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* a:hover {
+    color: #00ca22;
+  } */
+  
+  @media screen and (max-width: 505px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      grid-gap: 0px;
+    }
+    .left {
+      padding-left: 5%; /* Ajusta el valor según sea necesario */
+       /* Ajusta el valor según sea necesario */
+    } 
+  }

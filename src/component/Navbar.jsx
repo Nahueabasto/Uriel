@@ -56,13 +56,13 @@ const Navbar = () => {
   
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
-          <Link to="/" onClick={handleClick} className="nav-link">Inicio</Link>
+          <Link to="/" onClick={handleClick} className="nav-link">3d</Link>
         </li>
         <li>
-          <Link to="/projects" onClick={handleClick} className="nav-link">Proyectos</Link>
+          <Link to="/projects" onClick={handleClick} className="nav-link">3d</Link>
         </li>
         <li>
-          <Link to="/about" onClick={handleClick} className="nav-link">Sobre mi</Link>
+          <Link to="/about" onClick={handleClick} className="nav-link">3d</Link>
         </li>
         {click && (
           <div className="contact-info">
