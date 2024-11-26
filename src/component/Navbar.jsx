@@ -92,10 +92,19 @@ const Navbar = () => {
     }
   };
 
+  // Función para manejar el cambio de tamaño de la ventana
+  const handleResize = () => {
+    if (window.innerWidth > 881) {
+      setClick(false); // Cierra el menú hamburguesa si el tamaño de la ventana es mayor a 881px
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", changeColor);
+    window.addEventListener("resize", handleResize); // Agrega el listener para el cambio de tamaño
     return () => {
       window.removeEventListener("scroll", changeColor);
+      window.removeEventListener("resize", handleResize); // Limpia el listener al desmontar
     };
   }, []);
 
@@ -115,21 +124,20 @@ const Navbar = () => {
 
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
-          <Link to="/" onClick={handleClick}>Inicio</Link>
+          <Link to="/" onClick={handleClick} className="nav-link">Inicio</Link>
         </li>
         <li>
-          <Link to="/projects" onClick={handleClick}>Proyectos</Link>
+          <Link to="/projects" onClick={handleClick} className="nav-link">Proyectos</Link>
         </li>
         <li>
-          <Link to="/about" onClick={handleClick}>Sobre mi</Link>
+          <Link to="/about" onClick={handleClick} className="nav-link">Sobre mi</Link>
         </li>
 
         {/* Sección de contacto solo visible en el menú hamburguesa */}
         {click && (
           <div className="contact-info">
-            <p> <EmailIcon style={{ color: "#fff", marginRight: "0.2rem" }} /> @gmail.com</p>
-          
-            <p> <WhatsAppIcon style={{ color: "#fff", marginRight: "0.2rem" }} />333333333</p>
+            <p><EmailIcon style={{ color: "#fff", marginRight: "0.2rem" }} /> @gmail.com</p>
+            <p><WhatsAppIcon style={{ color: "#fff", marginRight: "0.2rem" }} />333333333</p>
           </div>
         )}
       </ul>
