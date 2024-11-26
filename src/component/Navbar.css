@@ -1,6 +1,6 @@
 .header {
   display: grid; 
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   align-items: center;
   padding: 0rem 4rem;
@@ -11,11 +11,18 @@
   background-color: #FFD700;
 }
 
+
 .logo-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* flex-direction: column;
+  align-items: center; */
+  /* justify-content: center; */
+}
+
+.search-container {
+  display: flex; /* Permite que el campo de búsqueda y el icono se alineen en línea */
+  align-items: center; /* Alinea verticalmente el input y el icono */
+  margin-left: 50px; /* Espaciado entre el logo y el campo de búsqueda */
 }
 
 .tagline {
@@ -31,10 +38,12 @@
 
 .nav-menu {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centra los elementos del menú */
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-grow: 1; /* Permite que el menú ocupe el espacio disponible */
 }
 
 .nav-menu li {
@@ -90,7 +99,9 @@
 }
 
 
-
+.contact-info {
+  display: none; /* Ocultar por defecto */
+}
 
 
 .nav-menu-mobile li a {
@@ -106,6 +117,7 @@
 @media screen and (max-width: 881px) {
   .header {
       padding: 0rem 2rem;
+      grid-template-columns: auto 1fr auto;
   }
 
   .portfolio-title {
@@ -175,6 +187,8 @@
   }
 
   .contact-info {
+    display: flex;
+    flex-direction: column;
       background-color: #333333;
       color: #fff;
       margin-right: auto;

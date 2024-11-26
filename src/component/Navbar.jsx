@@ -6,7 +6,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
-import img from "../img/logo.png"
+import img from "../img/logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -22,7 +22,6 @@ const Navbar = () => {
     }
   };
 
-  // Función para manejar el cambio de tamaño de la ventana
   const handleResize = () => {
     if (window.innerWidth > 881) {
       setClick(false); // Cierra el menú hamburguesa si el tamaño de la ventana es mayor a 881px
@@ -31,21 +30,25 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeColor);
-    window.addEventListener("resize", handleResize); // Agrega el listener para el cambio de tamaño
+    window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("scroll", changeColor);
-      window.removeEventListener("resize", handleResize); // Limpia el listener al desmontar
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
     <div className={color ? "header header-bg" : "header"}>
-      <Link to="/">
-        <div className="logo-container">
+      <div className="logo-container">
+        <Link to="/">
           <img className="logoeco" src={img} alt="EcoEcho" width="50" height="50" />
+        </Link>
+        {/* Contenedor flex para el logo y el campo de búsqueda */}
+        <div className="search-container">
+          <input type="text" placeholder="Buscar..." className="search-input" />
         </div>
-      </Link>
-  
+      </div>
+
       <div className="hamburguer" onClick={handleClick}>
         {click ? (
           <CloseIcon size={30} style={{ color: "#fff" }} />
@@ -56,13 +59,13 @@ const Navbar = () => {
   
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
-          <Link to="/" onClick={handleClick} className="nav-link">3d</Link>
+          <Link to="/" onClick={handleClick} className="nav-link">Inicio</Link>
         </li>
         <li>
-          <Link to="/projects" onClick={handleClick} className="nav-link">3d</Link>
+          <Link to="/projects" onClick={handleClick} className="nav-link">Proyectos</Link>
         </li>
         <li>
-          <Link to="/about" onClick={handleClick} className="nav-link">3d</Link>
+          <Link to="/about" onClick={handleClick} className="nav-link">Sobre mí</Link>
         </li>
         {click && (
           <div className="contact-info">
@@ -73,7 +76,7 @@ const Navbar = () => {
             <div className="contactanos">
               <p>Contactanos</p>
               <p><EmailIcon style={{ color: "#fff", marginRight: "0.2rem" }} /> @gmail.com</p>
-              <p><WhatsAppIcon style={{ color: "#fff", marginRight: "0.2rem" }} />333333333</p>
+              <p><WhatsAppIcon style={{ color: "#fff", marginRight: "0.2rem" }} /> 333333333</p>
             </div>
           </div>
         )}
