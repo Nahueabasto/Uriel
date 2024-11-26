@@ -40,16 +40,10 @@
 .nav-menu li {
   padding: 0 2rem;
   font-weight: 500;
-  border-bottom: 1px solid #fff; /* Línea entre los elementos de la lista */
+
 }
 
-.nav-menu li:first-child {
-  border-top: 1px solid #fff; /* Línea por arriba del primer elemento */
-}
 
-.nav-menu li:last-child {
-  border-bottom: 1px solid #fff; /* Línea por debajo del último elemento */
-}
 
 .nav-menu li a {
   font-size: 1.1rem;
@@ -92,16 +86,12 @@
 
 .nav-menu-mobile li {
   padding: 1rem;
-  border-bottom: 1px solid #fff; /* Línea entre los elementos de la lista */
+ 
 }
 
-.nav-menu-mobile li:first-child {
-  border-top: 1px solid #fff; /* Línea por arriba del primer elemento */
-}
 
-.nav-menu-mobile li:last-child {
-  border-bottom: 1px solid #fff; /* Línea por debajo del último elemento */
-}
+
+
 
 .nav-menu-mobile li a {
   color: #fff;
@@ -152,11 +142,11 @@
   }
 
   .nav-menu li:first-child {
-      border-top: 1px solid #fff; /* Línea por arriba del primer elemento */
+      border-top: 1px solid #fff; 
   }
 
   .nav-menu li:last-child {
-      border-bottom: 1px solid #fff; /* Línea por debajo del último elemento */
+      border-bottom: 1px solid #fff; 
   }
 
   .nav-menu li .nav-link {
@@ -174,10 +164,31 @@
   }
 
   .contact-info {
-      padding: 1rem;
       background-color: #333333;
       color: #fff;
       margin-right: auto;
       margin-left: 0px;
+      width: 100%;
   }
+
+  .seguinos, .contactanos {
+    margin: 10px 0; /* Espacio entre las secciones */
+    border-bottom: 1px solid #fff; /* Línea de separación debajo de cada sección */
+    padding: 1rem;
+   
+}
+
+.seguinos p, .contactanos p {
+    display: flex; /* Utiliza flexbox para alinear íconos y texto */
+    align-items: center; /* Centra verticalmente el texto y el ícono */
+    /* margin-top: 10px; */
+}
+
+.seguinos p:last-child, .contactanos p:last-child {
+  
+    margin-top: 5px; /* Espacio entre el texto y el ícono */
+}
+.contactanos p{
+  margin-bottom: 10px;
+}
 }
