@@ -1,53 +1,31 @@
 import React from "react";
-import "./Footer.css"
-
-//Icons
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import "./Footer.css";
+import { Link } from "react-router-dom";
+import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from "@mui/icons-material/Email";
+import img from "../img/logo.png";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-container">
-      <div className="right">
-          <h4>Sobre mi</h4>
-          <p>
-         
-          </p>
+        <div className="right">
+          <div className="seguino">
+          <div className="lo">
+        <Link to="/">
+          <img className="logoeco" src={img} alt="EcoEcho" width="50" height="50" />
+        </Link>
+  
+      </div>
+            <p>Seguinos</p>
+            <p><InstagramIcon style={{ color: "#fff", marginRight: "2rem", marginTop: "5px" }} /></p>
+          </div>
         </div>
 
         <div className="left">
-  <h4>Contacto</h4>
-  <div className="icon">
-  
-  <a
-    href=""
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <div className="location">
-        <LinkedInIcon
-          size={20}
-          style={{ color: "", fontSize: "1.8rem", marginRight: "1rem" }}
-        />
-    </div>
-  </a>
-  <a
-    href=""
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <div className="location">
-        <EmailIcon
-          size={20}
-          style={{ color: "", fontSize: "1.8rem", marginRight: "1rem" }}
-        />
-    </div>
-  </a>
-</div>
-</div>
-      
+          <h3>Contacto</h3>
+       
+        </div>
       </div>
     </div>
   );
