@@ -70,13 +70,13 @@ const Navbar = () => {
           <div className="contact-info">
             <div className="seguinos">
               <p>Seguinos</p>
-              <p><InstagramIcon style={{ color: "#fff", marginRight: "0.2rem", marginBottom: "10px", fontSize: "20px" }} /></p>
+              <p><InstagramIcon style={{ color: "#C13584", marginRight: "0.2rem", marginBottom: "10px", fontSize: "20px" }} /></p>
             </div>
             <div className="contactanos">
               <p>Contactanos</p>
-              <p><TelegramIcon style={{ color: "#fff", marginRight: "0.2rem", fontSize: "20px" }} /> 333333333</p>
-              <p><WhatsAppIcon style={{ color: "#fff", marginRight: "0.2rem", fontSize: "20px" }} /> 333333333</p>
-              <p><EmailIcon style={{ color: "#fff", marginRight: "0.2rem", fontSize: "20px" }} /> @gmail.com</p>
+              <p><TelegramIcon style={{ color: "#0088cc", marginRight: "0.2rem", fontSize: "20px" }} /> 333333333</p>
+              <p><WhatsAppIcon style={{ color: "#25D366", marginRight: "0.2rem", fontSize: "20px" }} /> 333333333</p>
+              <p><EmailIcon style={{ color: "#EA4335", marginRight: "0.2rem", fontSize: "20px" }} /> @gmail.com</p>
             </div>
             <div className="contactanos">
               <p>Nosotros</p>

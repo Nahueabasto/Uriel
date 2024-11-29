@@ -55,8 +55,6 @@
 
 }
 
-
-
 .nav-menu li a {
   font-size: 1.1rem;
   font-weight: bold;
@@ -65,7 +63,7 @@
 }
 
 .nav-menu li a:hover {
-  color: #3f2a1d;
+  color: #FFD700;
 }
 
 .icons {
