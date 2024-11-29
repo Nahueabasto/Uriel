@@ -18,7 +18,7 @@ const Footer = () => {
         </Link>
   
       </div>
-            <p>Seguinos</p>
+      <h3>Seguinos</h3>
             <p><InstagramIcon style={{ color: "#fff", marginRight: "2rem", marginTop: "5px" }} /></p>
           </div>
         </div>
