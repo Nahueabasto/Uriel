@@ -8,6 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 import img from "../img/logo.png";
 import "./Navbar.css";
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -69,12 +70,13 @@ const Navbar = () => {
           <div className="contact-info">
             <div className="seguinos">
               <p>Seguinos</p>
-              <p><InstagramIcon style={{ color: "#fff", marginRight: "0.2rem", marginBottom: "10px" }} /></p>
+              <p><InstagramIcon style={{ color: "#fff", marginRight: "0.2rem", marginBottom: "10px", fontSize: "20px" }} /></p>
             </div>
             <div className="contactanos">
               <p>Contactanos</p>
-              <p><EmailIcon style={{ color: "#fff", marginRight: "0.2rem" }} /> @gmail.com</p>
-              <p><WhatsAppIcon style={{ color: "#fff", marginRight: "0.2rem" }} /> 333333333</p>
+              <p><TelegramIcon style={{ color: "#fff", marginRight: "0.2rem", fontSize: "20px" }} /> 333333333</p>
+              <p><WhatsAppIcon style={{ color: "#fff", marginRight: "0.2rem", fontSize: "20px" }} /> 333333333</p>
+              <p><EmailIcon style={{ color: "#fff", marginRight: "0.2rem", fontSize: "20px" }} /> @gmail.com</p>
             </div>
             <div className="contactanos">
               <p>Nosotros</p>
@@ -84,14 +86,14 @@ const Navbar = () => {
         )}
       </ul>
       <div className="icons">
-        <a href="" target="_blank" rel="noopener noreferrer">
-          <WhatsAppIcon className="mui" size={20} style={{ color: "#fff", fontSize: "large", marginRight: "1rem" }} />
+        <a href="https://t.me/Pipa187" target="_blank" rel="noopener noreferrer">
+          <TelegramIcon className="mui" size={20} style={{ color: "#fff", fontSize: "20px", marginRight: "1rem" }} />
         </a>
         <a href="" target="_blank" rel="noopener noreferrer">
-          <FacebookIcon className="mui" size={20} style={{ color: "#fff", fontSize: "large", marginRight: "1rem" }} />
+          <WhatsAppIcon className="mui" size={20} style={{ color: "#fff", fontSize: "20px", marginRight: "1rem" }} />
         </a>
         <a href="" target="_blank" rel="noopener noreferrer">
-          <InstagramIcon className="mui" size={20} style={{ color: "#fff", fontSize: "large", marginRight: "1rem" }} />
+          <InstagramIcon className="mui" size={20} style={{ color: "#fff", fontSize: "20px", marginRight: "1rem" }} />
         </a>
       </div>
     </div>
