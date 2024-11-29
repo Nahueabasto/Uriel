@@ -70,15 +70,17 @@ const Navbar = () => {
           <div className="contact-info">
             <div className="seguinos">
               <p>Seguinos</p>
-              <p><InstagramIcon style={{ color: "#C13584", marginRight: "0.2rem", marginBottom: "10px", fontSize: "20px" }} /></p>
+              <p>
+              <a href="https://www.instagram.com/pipa.3design/" target="_blank" rel="noopener noreferrer"><InstagramIcon style={{ color: "#C13584", marginRight: "0.2rem", fontSize: "20px" }} /></a></p>
             </div>
             <div className="contactanos">
               <p>Contactanos</p>
               <p>
-              <a href="https://t.me/Pipa187" target="_blank" rel="noopener noreferrer"><TelegramIcon style={{ color: "#0088cc", marginRight: "0.2rem", fontSize: "20px" }} /> T.me/Pipa187
-              </a></p>
+              <a href="https://t.me/Pipa187" target="_blank" rel="noopener noreferrer"><TelegramIcon style={{ color: "#0088cc", marginRight: "0.2rem", fontSize: "20px" }} /></a>T.me/Pipa187</p>
               <p><WhatsAppIcon style={{ color: "#25D366", marginRight: "0.2rem", fontSize: "20px" }} /> 333333333</p>
-              <p><EmailIcon style={{ color: "#EA4335", marginRight: "0.2rem", fontSize: "20px" }} /> uabasto77@gmail.com</p>
+              <p>
+              <a href="mailto:uabasto77@gmail.com" target="_blank" rel="noopener noreferrer">
+                <EmailIcon style={{ color: "#EA4335", marginRight: "0.2rem", fontSize: "20px" }} /> </a>uabasto77@gmail.com</p>
             </div>
             <div className="contactanos">
               <p>Nosotros</p>
