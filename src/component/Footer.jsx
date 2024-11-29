@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import img from "../img/logo.png";
+import img from "../img/completa.png";
 import TelegramIcon from '@mui/icons-material/Telegram';
 
 const Footer = () => {

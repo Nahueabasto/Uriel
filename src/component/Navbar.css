@@ -20,6 +20,12 @@
   /* justify-content: center; */
 }
 
+.logoeco {
+  width: 60px; /* Asegúrate de que el ancho sea igual a la altura */
+  height: 60px; /* Asegúrate de que la altura sea igual al ancho */
+  border-radius: 50%; /* Esto hará que la imagen sea circular */
+  object-fit: cover; /* Opcional: esto asegura que la imagen se ajuste bien dentro del círculo */
+}
 
 .search-container {
   display: flex; /* Permite que el campo de búsqueda y el icono se alineen en línea */

@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
-import img from "../img/logo.png";
+import img from "../img/completa.png";
+// import img from "../img/logo.png";
 import "./Navbar.css";
 import TelegramIcon from '@mui/icons-material/Telegram';
 
