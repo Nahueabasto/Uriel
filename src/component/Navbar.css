@@ -204,18 +204,19 @@
    
 }
 
-.seguinos p, .contactanos p {
+.seguinos a, .contactanos a {
     display: flex; /* Utiliza flexbox para alinear íconos y texto */
     align-items: center; /* Centra verticalmente el texto y el ícono */
     /* margin-top: 10px; */
 }
 
-.seguinos p:last-child, .contactanos p:last-child {
+.seguinos a:last-child, .contactanos p:last-child {
   
     margin-top: 5px; /* Espacio entre el texto y el ícono */
 }
-.contactanos p{
-  margin-bottom: 10px;
+.contactanos a{
+  margin-bottom: 3px;
+  margin-top: 10px;
 }
 
 }

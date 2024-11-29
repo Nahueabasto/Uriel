@@ -75,12 +75,14 @@ const Navbar = () => {
             </div>
             <div className="contactanos">
               <p>Contactanos</p>
-              <p>
-              <a href="https://t.me/Pipa187" target="_blank" rel="noopener noreferrer"><TelegramIcon style={{ color: "#0088cc", marginRight: "0.2rem", fontSize: "20px" }} /></a>T.me/Pipa187</p>
-              <p><WhatsAppIcon style={{ color: "#25D366", marginRight: "0.2rem", fontSize: "20px" }} /> 333333333</p>
-              <p>
+              <a href="https://t.me/Pipa187" target="_blank" rel="noopener noreferrer"><TelegramIcon style={{ color: "#0088cc", marginRight: "0.2rem", fontSize: "20px", verticalAlign: "middle" }} />T.me/Pipa187</a>
+
+              <a href="https://t.me/Pipa187" target="_blank" rel="noopener noreferrer"><WhatsAppIcon style={{ color: "#25D366", marginRight: "0.2rem", fontSize: "20px" }} /> 333333333</a>
+              
+
               <a href="mailto:uabasto77@gmail.com" target="_blank" rel="noopener noreferrer">
-                <EmailIcon style={{ color: "#EA4335", marginRight: "0.2rem", fontSize: "20px" }} /> </a>uabasto77@gmail.com</p>
+                <EmailIcon style={{ color: "#EA4335", marginRight: "0.2rem", fontSize: "20px", verticalAlign: "middle" }} /> 
+                uabasto77@gmail.com</a>
             </div>
             <div className="contactanos">
               <p>Nosotros</p>
