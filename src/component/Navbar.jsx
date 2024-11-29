@@ -41,7 +41,7 @@ const Navbar = () => {
     <div className={color ? "header header-bg" : "header"}>
       <div className="logo-container">
         <Link to="/">
-          <img className="logoeco" src={img} alt="EcoEcho" width="50" height="50" />
+          <img className="logoeco" src={img} alt="EcoEcho" width="60" height="60" />
         </Link>
         {/* Contenedor flex para el logo y el campo de búsqueda */}
         <div className="search-container">
@@ -50,9 +50,9 @@ const Navbar = () => {
       </div>
       <div className="hamburguer" onClick={handleClick}>
       {click ? (
-  <CloseIcon style={{ color: "#fff", fontSize: "40px" }} />
+  <CloseIcon style={{ color: "#fff", fontSize: "30px" }} />
 ) : (
-  <MenuIcon style={{ color: "#000000", fontSize: "40px" }} />
+  <MenuIcon style={{ color: "#000000", fontSize: "30px" }} />
 )}
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>

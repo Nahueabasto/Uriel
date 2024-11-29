@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="seguino">
           <div className="lo">
         <Link to="/">
-          <img className="logoeco" src={img} alt="EcoEcho" width="50" height="50" />
+          <img className="logoeco" src={img} alt="EcoEcho" width="60" height="60" />
         </Link>
   
       </div>
