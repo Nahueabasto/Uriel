@@ -198,7 +198,7 @@
   }
 
   .seguinos, .contactanos {
-    margin: 10px 0; /* Espacio entre las secciones */
+    /* margin: 10px 0;  */
     border-bottom: 1px solid #fff; /* Línea de separación debajo de cada sección */
     padding: 1rem;
    

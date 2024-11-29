@@ -16,7 +16,7 @@
     margin: 0 auto; 
     max-width: 100%;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 180px;
+    grid-gap: 100px;
     /* column-gap: 180px; */
   }
 
