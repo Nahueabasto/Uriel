@@ -20,7 +20,9 @@ const Footer = () => {
   
       </div>
       <h3>Seguinos</h3>
-            <p><InstagramIcon style={{ color: "#C13584", marginRight: "2rem", marginTop: "5px", fontSize: "20px" }} /></p>
+      <a href="https://www.instagram.com/pipa.3design/" target="_blank" rel="noopener noreferrer">
+        <InstagramIcon style={{ color: "#C13584", marginRight: "2rem", marginTop: "5px", fontSize: "20px" }} /> 
+        </a>
           </div>
         </div>
         <div className="le">
@@ -32,16 +34,22 @@ const Footer = () => {
         <div className="le">
   <h3>Contactanos</h3>
   <p>
+  <a href="https://t.me/Pipa187" target="_blank" rel="noopener noreferrer">
     <TelegramIcon style={{ color: "#0088cc", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
     T.me/Pipa187
-  </p>
+    </a>
+    </p>
   <p>
+  <a href="" target="_blank" rel="noopener noreferrer">
     <WhatsAppIcon style={{ color: "#25D366", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
     333333333
+    </a>
   </p>
   <p>
+  <a href="mailto:uabasto77@gmail.com" target="_blank" rel="noopener noreferrer">
     <EmailIcon style={{ color: "#EA4335", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
-    @gmail.com
+    uabasto77@gmail.com
+    </a>
   </p>
 </div>
         <div className="le">

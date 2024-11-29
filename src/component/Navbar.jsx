@@ -92,7 +92,7 @@ const Navbar = () => {
         <a href="" target="_blank" rel="noopener noreferrer">
           <WhatsAppIcon className="mui" size={20} style={{ color: "#25D366", fontSize: "20px", marginRight: "1rem" }} />
         </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/pipa.3design/" target="_blank" rel="noopener noreferrer">
           <InstagramIcon className="mui" size={20} style={{ color: "#C13584", fontSize: "20px", marginRight: "1rem" }} />
         </a>
       </div>
