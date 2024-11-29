@@ -13,7 +13,7 @@ router.post('/email', async (req, res) => {
   try {
     const { data, error } = await resend.emails.send({
       from: `${firstName} <onboarding@resend.dev>`,
-      to: ['nahuel7474@gmail.com'],
+      to: ['uabasto77@gmail.com'],
       subject: `Message from ${firstName}`,
       html: `<p><strong>Name:</strong> ${firstName}</p>
              <p><strong>Email:</strong> ${email}</p>

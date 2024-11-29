@@ -49,11 +49,11 @@ const Navbar = () => {
         </div>
       </div>
       <div className="hamburguer" onClick={handleClick}>
-        {click ? (
-          <CloseIcon size={30} style={{ color: "#fff" }} />
-        ) : (
-          <MenuIcon size={30} style={{ color: "#fff" }} />
-        )}
+      {click ? (
+  <CloseIcon style={{ color: "#fff", fontSize: "40px" }} />
+) : (
+  <MenuIcon style={{ color: "#000000", fontSize: "40px" }} />
+)}
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
@@ -75,6 +75,10 @@ const Navbar = () => {
               <p>Contactanos</p>
               <p><EmailIcon style={{ color: "#fff", marginRight: "0.2rem" }} /> @gmail.com</p>
               <p><WhatsAppIcon style={{ color: "#fff", marginRight: "0.2rem" }} /> 333333333</p>
+            </div>
+            <div className="contactanos">
+              <p>Nosotros</p>
+              <p>Contacto</p>
             </div>
           </div>
         )}

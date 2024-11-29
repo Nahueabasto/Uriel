@@ -16,7 +16,8 @@
     margin: 0 auto; 
     max-width: 100%;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 200px;
+    grid-gap: 180px;
+    /* column-gap: 180px; */
   }
 
 
@@ -45,7 +46,7 @@
   }
   
   p {
-    font-family: 'Poppins', sans-serif;
+  
     color: #fff;
   }
 
@@ -74,13 +75,11 @@
 
   @media screen and (max-width: 510px) {
     .footer-container {
-        display: grid; /* Asegúrate de que el contenedor tenga display: grid */
+        display: grid; 
         grid-template-columns: 1fr;
-        margin-left: 10px;
-        
+        margin-left: 0px; 
         grid-gap: 50px;
-        justify-items: start; /* Alinea los elementos a la izquierda */
-        /* o usa justify-content: start; si es necesario */
+        justify-items: start; 
     }
 }
 }

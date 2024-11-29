@@ -5,6 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import img from "../img/logo.png";
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 const Footer = () => {
   return (
@@ -29,10 +30,20 @@ const Footer = () => {
         </Link>
         </div>
         <div className="le">
-          <h3>Contactanos</h3>
-          <p><EmailIcon style={{ color: "#fff", marginRight: "0.2rem" }} /> @gmail.com</p>
-          <p><WhatsAppIcon style={{ color: "#fff", marginRight: "0.2rem" }} /> 333333333</p>
-        </div>
+  <h3>Contactanos</h3>
+  <p>
+    <TelegramIcon style={{ color: "#fff", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
+    T.me/Pipa187
+  </p>
+  <p>
+    <WhatsAppIcon style={{ color: "#fff", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
+    333333333
+  </p>
+  <p>
+    <EmailIcon style={{ color: "#fff", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
+    @gmail.com
+  </p>
+</div>
         <div className="le">
           <h3>Contactanos</h3>
           <Link to="/">
