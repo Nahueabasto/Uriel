@@ -20,7 +20,7 @@ const Footer = () => {
   
       </div>
       <h3>Seguinos</h3>
-            <p><InstagramIcon style={{ color: "#fff", marginRight: "2rem", marginTop: "5px" }} /></p>
+            <p><InstagramIcon style={{ color: "#C13584", marginRight: "2rem", marginTop: "5px", fontSize: "20px" }} /></p>
           </div>
         </div>
         <div className="le">
@@ -32,15 +32,15 @@ const Footer = () => {
         <div className="le">
   <h3>Contactanos</h3>
   <p>
-    <TelegramIcon style={{ color: "#fff", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
+    <TelegramIcon style={{ color: "#0088cc", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
     T.me/Pipa187
   </p>
   <p>
-    <WhatsAppIcon style={{ color: "#fff", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
+    <WhatsAppIcon style={{ color: "#25D366", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
     333333333
   </p>
   <p>
-    <EmailIcon style={{ color: "#fff", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
+    <EmailIcon style={{ color: "#EA4335", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
     @gmail.com
   </p>
 </div>

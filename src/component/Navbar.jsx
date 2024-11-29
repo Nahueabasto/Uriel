@@ -53,7 +53,7 @@ const Navbar = () => {
       {click ? (
   <CloseIcon style={{ color: "#fff", fontSize: "30px" }} />
 ) : (
-  <MenuIcon style={{ color: "#000000", fontSize: "30px" }} />
+  <MenuIcon style={{ color: "#fff", fontSize: "30px" }} />
 )}
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -87,13 +87,13 @@ const Navbar = () => {
       </ul>
       <div className="icons">
         <a href="https://t.me/Pipa187" target="_blank" rel="noopener noreferrer">
-          <TelegramIcon className="mui" size={20} style={{ color: "#fff", fontSize: "20px", marginRight: "1rem" }} />
+          <TelegramIcon className="mui" size={20} style={{ color: "#0088cc", fontSize: "20px", marginRight: "1rem" }} />
         </a>
         <a href="" target="_blank" rel="noopener noreferrer">
-          <WhatsAppIcon className="mui" size={20} style={{ color: "#fff", fontSize: "20px", marginRight: "1rem" }} />
+          <WhatsAppIcon className="mui" size={20} style={{ color: "#25D366", fontSize: "20px", marginRight: "1rem" }} />
         </a>
         <a href="" target="_blank" rel="noopener noreferrer">
-          <InstagramIcon className="mui" size={20} style={{ color: "#fff", fontSize: "20px", marginRight: "1rem" }} />
+          <InstagramIcon className="mui" size={20} style={{ color: "#C13584", fontSize: "20px", marginRight: "1rem" }} />
         </a>
       </div>
     </div>
