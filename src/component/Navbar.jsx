@@ -48,7 +48,6 @@ const Navbar = () => {
           <input type="text" placeholder="Buscar..." className="search-input" />
         </div>
       </div>
-
       <div className="hamburguer" onClick={handleClick}>
         {click ? (
           <CloseIcon size={30} style={{ color: "#fff" }} />
@@ -56,7 +55,6 @@ const Navbar = () => {
           <MenuIcon size={30} style={{ color: "#fff" }} />
         )}
       </div>
-  
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
           <Link to="/" onClick={handleClick} className="nav-link">Inicio</Link>
@@ -81,7 +79,6 @@ const Navbar = () => {
           </div>
         )}
       </ul>
-  
       <div className="icons">
         <a href="" target="_blank" rel="noopener noreferrer">
           <WhatsAppIcon className="mui" size={20} style={{ color: "#fff", fontSize: "large", marginRight: "1rem" }} />

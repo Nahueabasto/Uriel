@@ -1,0 +1,22 @@
+.texto-reserva {
+    padding: 15rem 120px 0rem 120px;
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .texto-reserva h2 {
+      color: #000000;;
+      margin-bottom: 2rem;
+    }
+
+    .texto-reserva p {
+      color: #666666; 
+      line-height: 0.5;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 881px) {
+      .texto-reserva {
+        padding: 2rem 25px 0rem 25px;
+      }
+    }

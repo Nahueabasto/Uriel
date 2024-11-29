@@ -1,19 +1,13 @@
 .footer {
- 
-  
-    /* background-color: #000000;
-    font-family: 'Poppins', sans-serif;
-    padding: 3rem 5rem;
-    margin-top: 50px; */
-    display: flex;
-    padding: 3rem 5rem;
-  
+  display: flex;
+  padding: 3rem 5rem; 
   flex-direction: column;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   z-index: -1;
   background-color: #000000;
+  margin-top: 50px;
   }
 
   
@@ -22,17 +16,9 @@
     margin: 0 auto; 
     max-width: 100%;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 250px;
+    grid-gap: 200px;
   }
 
-  .left {
-    display: flex;
-  
-    
-  
-    font-family: 'Poppins', sans-serif;
-   
-  } 
 
   .icon {
     display: flex;
@@ -51,7 +37,6 @@
     
   }
   
-
   
   h4 {
     font-size: 1.1rem;
@@ -74,13 +59,28 @@
 .lo{
   margin-bottom: 15px;
 }
-  @media screen and (max-width: 505px) {
-    .footer-container {
-      grid-template-columns: 1fr;
-      grid-gap: 0px;
-    }
-    .left {
-      padding-left: 5%; /* Ajusta el valor según sea necesario */
-       /* Ajusta el valor según sea necesario */
-    } 
+
+.le p{
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1110px) {
+  .footer-container {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto; 
+      max-width: 100%;
+      grid-gap: 100px;
   }
+
+  @media screen and (max-width: 510px) {
+    .footer-container {
+        display: grid; /* Asegúrate de que el contenedor tenga display: grid */
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        
+        grid-gap: 50px;
+        justify-items: start; /* Alinea los elementos a la izquierda */
+        /* o usa justify-content: start; si es necesario */
+    }
+}
+}
