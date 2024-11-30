@@ -5,6 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import img from "../img/completa.png";
+import cults from "../img/cults.png";
 import TelegramIcon from '@mui/icons-material/Telegram';
 
 const Footer = () => {
@@ -38,6 +39,22 @@ const Footer = () => {
     T.me/Pipa187
     </a>
     </p>
+    <p>
+    <a href="https://cults3d.com/es/usuarios/UrielPipa/modelos-3d" target="_blank" rel="noopener noreferrer">
+      <img 
+        src={cults} 
+        alt="Cults Icon" 
+        style={{ 
+          color: "#EA4335", // Este estilo no se aplicará a la imagen, puedes eliminarlo
+          marginRight: "0.3rem", 
+          width: "20px", // Ajusta el tamaño según sea necesario
+          height: "20px", // Ajusta el tamaño según sea necesario
+          verticalAlign: "middle" 
+        }} 
+      />
+      @UrielPipa
+    </a>
+  </p>
   <p>
   <a href="" target="_blank" rel="noopener noreferrer">
     <WhatsAppIcon style={{ color: "#25D366", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
@@ -48,12 +65,6 @@ const Footer = () => {
   <a href="mailto:uabasto77@gmail.com" target="_blank" rel="noopener noreferrer">
     <EmailIcon style={{ color: "#EA4335", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
     uabasto77@gmail.com
-    </a>
-  </p>
-  <p>
-  <a href="https://cults3d.com/es/usuarios/UrielPipa/modelos-3d" target="_blank" rel="noopener noreferrer">
-    <EmailIcon style={{ color: "#EA4335", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
-    UrielPipa
     </a>
   </p>
 </div>

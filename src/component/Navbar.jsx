@@ -116,7 +116,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 import img from "../img/completa.png";
-// import img from "../img/logo.png";
+import cults from "../img/cults.png";
 import "./Navbar.css";
 import TelegramIcon from '@mui/icons-material/Telegram';
 
@@ -186,6 +186,20 @@ const Navbar = () => {
             <div className="contactanos">
               <p>Contactanos</p>
               <a href="https://t.me/Pipa187" target="_blank" rel="noopener noreferrer"><TelegramIcon style={{ color: "#0088cc", marginRight: "0.2rem", fontSize: "20px", verticalAlign: "middle" }} />T.me/Pipa187</a>
+              <a href="https://cults3d.com/es/usuarios/UrielPipa/modelos-3d" target="_blank" rel="noopener noreferrer">
+      <img 
+        src={cults} 
+        alt="Cults Icon" 
+        style={{ 
+          color: "#EA4335", // Este estilo no se aplicará a la imagen, puedes eliminarlo
+          marginRight: "0.3rem", 
+          width: "20px", // Ajusta el tamaño según sea necesario
+          height: "20px", // Ajusta el tamaño según sea necesario
+          verticalAlign: "middle" 
+        }} 
+      />
+      @UrielPipa
+    </a>
               <a href="https://t.me/Pipa187" target="_blank" rel="noopener noreferrer"><WhatsAppIcon style={{ color: "#25D366", marginRight: "0.2rem", fontSize: "20px" }} /> 333333333</a>
               <a href="mailto:uabasto77@gmail.com" target="_blank" rel="noopener noreferrer">
                 <EmailIcon style={{ color: "#EA4335", marginRight: "0.2rem", fontSize: "20px", verticalAlign: "middle" }} /> 
