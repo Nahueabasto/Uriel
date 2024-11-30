@@ -17,7 +17,6 @@ const Footer = () => {
         <Link to="/">
           <img className="logoeco" src={img} alt="EcoEcho" width="60" height="60" />
         </Link>
-  
       </div>
       <h3>Seguinos</h3>
       <a href="https://www.instagram.com/pipa.3design/" target="_blank" rel="noopener noreferrer">
@@ -26,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="le">
-          <h3>Contactanos</h3>
+          <h3>Contacto</h3>
           <Link to="/contacto">
           <p>Contacto</p>
         </Link>
@@ -49,6 +48,12 @@ const Footer = () => {
   <a href="mailto:uabasto77@gmail.com" target="_blank" rel="noopener noreferrer">
     <EmailIcon style={{ color: "#EA4335", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
     uabasto77@gmail.com
+    </a>
+  </p>
+  <p>
+  <a href="https://cults3d.com/es/usuarios/UrielPipa/modelos-3d" target="_blank" rel="noopener noreferrer">
+    <EmailIcon style={{ color: "#EA4335", marginRight: "0.3rem", fontSize: "20px", verticalAlign: "middle" }} /> 
+    UrielPipa
     </a>
   </p>
 </div>
