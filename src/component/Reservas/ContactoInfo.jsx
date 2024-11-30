@@ -82,7 +82,7 @@ const ContactForm = () => {
             {error && <p className="error-message">{error}</p>} {/* Mostrar mensaje de error */}
           </form>
         </div>
-        <div className='col-md-6'>
+        {/* <div className='col-md-6'>
           <h3>Ubicación</h3>
           <div className='map'>
             <iframe
@@ -94,8 +94,8 @@ const ContactForm = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
-        </div>
+          </div> 
+        </div>*/}
       </div>
     </div>
   );
