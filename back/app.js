@@ -36,7 +36,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: ["http://localhost:5173", "https://pipa3d.vercel.app/"],
+    origin: ["http://localhost:5173", "https://pipa3d.vercel.app"],
     credentials: true,
     methods: ['GET', 'POST'],
 }));
