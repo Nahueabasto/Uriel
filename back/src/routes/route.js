@@ -1,4 +1,3 @@
-// routes/route.js
 import express from 'express';
 import { Resend } from 'resend';
 import dotenv from 'dotenv';

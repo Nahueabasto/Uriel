@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="le">
-          <h3>Nosotros</h3>
+          <h3>Contactanos</h3>
           <Link to="/contacto">
           <p>Contacto</p>
         </Link>
@@ -53,9 +53,9 @@ const Footer = () => {
   </p>
 </div>
         <div className="le">
-          <h3>Contactanos</h3>
-          <Link to="/contacto">
-          <p>Contacto</p>
+          <h3>Nosotros</h3>
+          <Link to="/about">
+          <p>About</p>
         </Link>
         </div>
       </div>
