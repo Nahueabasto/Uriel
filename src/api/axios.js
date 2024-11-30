@@ -7,7 +7,7 @@ if (window.location.hostname === 'localhost') {
     baseURL = 'http://localhost:3000';
 } else {
     // Si no es localhost, asume que está en producción y utiliza la URL de producción
-    baseURL = 'https://uriel-qyc1.vercel.app/?vercelToolbarCode=bnkmuwyvmJ8Gz5u';
+    baseURL = 'https://uriel-qyc1.vercel.app/';
 }
 
 // Crea una instancia de axios con la URL correspondiente
