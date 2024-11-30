@@ -11,6 +11,10 @@ body {
   background-color: white;
 }
 
+body.no-scroll {
+  overflow: hidden; /* Desactivar el scroll en el body */
+}
+
 h1{
   color: black;
   text-decoration: none;

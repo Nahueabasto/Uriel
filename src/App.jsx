@@ -1,22 +1,22 @@
 import { HashRouter, Routes, Route } from 'react-router-dom'; 
 import Home from './pages/Home';
-import Reservas from './pages/Reservas';
+import Contacto from './pages/Contacto';
 import './App.css';
-// import { AuthProvider } from './Context/AuthContext';
+import { AuthProvider } from './Context/AuthContext';
 
 
 function App() {
   return (
-    // <AuthProvider>
+    <AuthProvider>
     <HashRouter>
       <div className="flex">
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/reservas" element={<Reservas />} />
+          <Route exact path="/contacto" element={<Contacto />} />
         </Routes>
       </div>
     </HashRouter>
-    // </AuthProvider>
+   </AuthProvider>
   );
 }
 

@@ -15,16 +15,13 @@
 
 .logo-container {
   display: flex;
-  /* flex-direction: column;
-  align-items: center; */
-  /* justify-content: center; */
 }
 
 .logoeco {
   width: 60px; /* Asegúrate de que el ancho sea igual a la altura */
   height: 60px; /* Asegúrate de que la altura sea igual al ancho */
   border-radius: 50%; /* Esto hará que la imagen sea circular */
-  object-fit: cover; /* Opcional: esto asegura que la imagen se ajuste bien dentro del círculo */
+  object-fit: cover; 
 }
 
 .search-container {
@@ -58,7 +55,6 @@
 .nav-menu li {
   padding: 0 2rem;
   font-weight: 500;
-
 }
 
 .nav-menu li a {
@@ -120,6 +116,7 @@
 .portfolio-title {
   display: block;
 }
+
 
 @media screen and (max-width: 881px) {
   .header {
@@ -223,6 +220,15 @@
 .contactanos a{
   margin-bottom: 3px;
   margin-top: 10px;
+}
+
+.contactanos p {
+  color: inherit; /* Asegúrate de que el color inicial herede del padre o establece un color predeterminado */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.contactanos a:hover {
+  color: #FFD700; /* Cambia el color al hacer hover */
 }
 
 }

@@ -5,7 +5,7 @@ import ContactoInfo from '../component/Reservas/ContactoInfo';
 import ReservaTexto from '../component/Reservas/ReservasText';
 
 
-export default function Reservas(){
+export default function Contacto(){
     return(
         <div>
        <Navbar />
