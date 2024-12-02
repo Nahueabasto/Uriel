@@ -72,6 +72,12 @@
   color: #FFD700; /* Cambia el color al hacer hover */
 }
 
+.le a:hover {
+  color: #FFD700; /* Cambia el color al hacer hover */
+}
+
+
+
 @media screen and (max-width: 1110px) {
   .footer-container {
       grid-template-columns: repeat(2, 1fr);
