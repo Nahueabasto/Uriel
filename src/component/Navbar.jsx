@@ -288,10 +288,28 @@ import img from "../img/completa.png";
 import cults from "../img/cults.png";
 import "./Navbar.css";
 import TelegramIcon from '@mui/icons-material/Telegram';
+// import { Close as CloseIcon, Menu as MenuIcon } from '@mui/icons-material';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  
+  const handleClick = () => {
+    setClick(!click);
+    
+    // Si el menú se está abriendo, restablecer el desplazamiento
+    if (!click) {
+      const menu = document.querySelector('.nav-menu');
+      if (menu) {
+        menu.scrollTop = 0; // Restablecer el desplazamiento a la parte superior
+      }
+    } else {
+      // Si el menú se está cerrando, también restablecer el desplazamiento
+      const menu = document.querySelector('.nav-menu');
+      if (menu) {
+        menu.scrollTop = 0; // Restablecer el desplazamiento a la parte superior
+      }
+    }
+  };
 
   const [color, setColor] = useState(false);
   const changeColor = () => {
@@ -304,18 +322,27 @@ const Navbar = () => {
 
   const handleResize = () => {
     if (window.innerWidth > 881) {
-      setClick(false); 
+      setClick(false);
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", changeColor);
     window.addEventListener("resize", handleResize);
+    
+    // Agregar o quitar la clase 'no-scroll' al body según el estado de 'click'
+    if (click) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+
     return () => {
       window.removeEventListener("scroll", changeColor);
       window.removeEventListener("resize", handleResize);
+      document.body.classList.remove('no-scroll'); // Asegúrate de limpiar al desmontar
     };
-  }, []);
+  }, [click]);
 
   return (
     <div className={color ? "header header-bg" : "header"}>
@@ -413,7 +440,9 @@ const Navbar = () => {
             </div>
             <div className="contactanos">
               <p>Nosotros</p>
+              <Link onClick={handleClick} to="/contacto">
               <p>Contacto</p>
+              </Link>
             </div> 
           </div> 
         )}  

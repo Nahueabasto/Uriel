@@ -70,7 +70,7 @@ const Footer = () => {
 </div>
         <div className="le">
           <h3>Nosotros</h3>
-          <Link to="/about">
+          <Link to="/contacto">
           <p>About</p>
         </Link>
         </div>
