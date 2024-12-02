@@ -281,6 +281,18 @@ width: 300px;
   /* padding: 19rem; */
 } 
 
+.hamburguer,
+.close-icon {
+  cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+  transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+/* Efecto de hover */
+
+.close-icon:hover {
+  color: #FFD700; /* Cambia el color al pasar el ratón */
+}
+
 .overlay {
   position: fixed; 
   left: 0;
@@ -307,7 +319,7 @@ width: 300px;
 
   padding: 10px 10px 10px 10px; */
   list-style: none;
-  display: flex;
+  display: none;
   flex-direction: column;
   position: fixed;
   top: 0; /* Alinea el menú en la parte superior */
@@ -319,7 +331,7 @@ width: 300px;
   transition: left 0.3s ease;
   overflow-y: auto; 
   padding: 10px;
-  transition: 0.3s;
+  transition: 0.0s;
 }
 
 .nav-item {
