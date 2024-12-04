@@ -1,0 +1,50 @@
+.project-heading {
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+  }
+
+  .project-p{
+    text-align: center;
+    padding: 0rem 0 2rem 0;
+  }
+  
+/*   
+  .project-card {
+    border-radius: 10px;
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  } */
+  .project-card {
+    border-radius: 10px; /* Borde redondeado para la tarjeta */
+    overflow: hidden; /* Asegúrate de que el contenido no sobresalga */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional para dar profundidad */
+    width: 100%; /* Asegúrate de que la tarjeta ocupe todo el ancho disponible */
+    max-width: 250px; /* O el ancho máximo que desees */
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .project-card img {
+    width: 250px;
+    height: 0px; 
+  }
+  
+  .project-title {
+    padding: 1rem 0;
+    font-weight: bold;
+    color: black; 
+    background-color: #e0e0e0;
+  }
+  
+  .project-details {
+    padding: 10px;
+    background-color: #e0e0e0; /* Color de fondo gris para el área de texto */
+    text-align: center;
+    border-radius: 0px 0px 10px 10px; /* Borde redondeado en la parte inferior */
+    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho */
+  }
+ 

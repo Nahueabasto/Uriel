@@ -350,14 +350,13 @@ const Navbar = () => {
         <Link to="/">
           <img className="logoeco" src={img} alt="EcoEcho" width="60" height="60" />
         </Link>
-      
       {/* <div className="menu-and-search"> */}
       <div className="hamburguer" onClick={handleClick}>
         {click ? (
-          <CloseIcon style={{ color: "#fff", fontSize: "30px" }} />
+          <CloseIcon className="re" style={{ color: "#fff", fontSize: "30px" }} />
         ) : (
           <div className="menu-content">
-            <MenuIcon style={{ color: "#fff", fontSize: "30px" }} />
+            <MenuIcon className="re" style={{ color: "#fff", fontSize: "30px" }} />
             <span className="menu-label" style={{ color: "#fff" }}>Menú</span>
           </div>
         )}
@@ -379,34 +378,34 @@ const Navbar = () => {
     </li>
   )}
         <li>
-          <Link to="/" onClick={handleClick} className="nav-link">Día del Padre</Link>
+          <Link to="/diadelpadre" onClick={handleClick} className="nav-link">Día del Padre</Link>
         </li>
         <li>
-          <Link to="/projects" onClick={handleClick} className="nav-link">Día de la Madre</Link>
+          <Link to="/diadelamadre" onClick={handleClick} className="nav-link">Día de la Madre</Link>
         </li>
         <li>
-          <Link to="/projects" onClick={handleClick} className="nav-link">Pascuas</Link>
+          <Link to="/pascuas" onClick={handleClick} className="nav-link">Pascuas</Link>
         </li>
         <li>
-          <Link to="/projects" onClick={handleClick} className="nav-link">Navidad</Link>
+          <Link to="/navidad" onClick={handleClick} className="nav-link">Navidad</Link>
         </li>
         <li>
-          <Link to="/projects" onClick={handleClick} className="nav-link">Halloween</Link>
+          <Link to="/halloween" onClick={handleClick} className="nav-link">Halloween</Link>
         </li>
         <li>
-          <Link to="/projects" onClick={handleClick} className="nav-link">Mates</Link>
+          <Link to="/mates" onClick={handleClick} className="nav-link">Mates</Link>
         </li>
         <li>
-          <Link to="/projects" onClick={handleClick} className="nav-link">Vasos y Chop</Link>
+          <Link to="/vasosychop" onClick={handleClick} className="nav-link">Vasos y Chop</Link>
         </li>
         <li>
-          <Link to="/about" onClick={handleClick} className="nav-link">Llaveros</Link>
+          <Link to="/llaveros" onClick={handleClick} className="nav-link">Llaveros</Link>
         </li>
         <li>
-          <Link to="/about" onClick={handleClick} className="nav-link">Flexi</Link>
+          <Link to="/flexi" onClick={handleClick} className="nav-link">Flexi</Link>
         </li>
         <li>
-          <Link to="/about" onClick={handleClick} className="nav-link">Deco</Link>
+          <Link to="/deco" onClick={handleClick} className="nav-link">Deco</Link>
         </li>
         
         {click && (

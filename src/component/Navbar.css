@@ -274,24 +274,25 @@ width: 300px;
   align-items: center; /* Centrar los elementos horizontalmente */
 }
 
- .hamburguer {
-  cursor: pointer;
-  display: flexbox; /* Activar Flexbox en el hamburguer */
-  justify-content: flex-start;
-  /* padding: 19rem; */
-} 
-
-.hamburguer,
-.close-icon {
+.hamburguer {
   cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
-  transition: color 0.3s ease; /* Transición suave para el color */
+  display: flex; /* Asegúrate de que los elementos se alineen correctamente */
+  align-items: center; /* Centra verticalmente */
 }
 
-/* Efecto de hover */
-
-.close-icon:hover {
-  color: #FFD700; /* Cambia el color al pasar el ratón */
+.hamburguer:hover .re {
+  color: #FFD700; /* Cambia el color de los iconos al pasar el ratón */
 }
+
+.menu-label {
+  transition: color 0.3s ease; /* Transición suave para el color de la etiqueta */
+}
+
+.hamburguer:hover .menu-label {
+  color: #FFD700; /* Cambia el color de la etiqueta al pasar el ratón */
+}
+
+
 
 .overlay {
   position: fixed; 
