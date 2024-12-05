@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../component/Navbar';
-import RenderDeco from '../component/Deco/RenderDeco';
+import Render from '../component/Render/Render';
 import Footer from '../component/Footer';
 
 export default function Deco(){
@@ -12,7 +12,7 @@ export default function Deco(){
     return(
         <div>
      <Navbar />
-     <RenderDeco categoria="deco" />
+     <Render categoria="deco" />
      <Footer />
         </div>
     )

@@ -18,7 +18,7 @@ const DecoCard = (props) => {
             style={{
               width: '100%', // Asegúrate de que la imagen ocupe todo el ancho del contenedor
               height: 'auto',
-              opacity: hovered ? 0.8 : 1,
+              opacity: hovered ? 1 : 1,
               borderRadius: '10px 10px 0px 0px', // Borde redondeado solo en la parte superior
             }}
             onMouseEnter={() => setHovered(true)}

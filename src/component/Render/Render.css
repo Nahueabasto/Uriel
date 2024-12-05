@@ -1,0 +1,45 @@
+.project-container {
+  max-width: 1200px; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 10rem 20px 0rem 20px; /* Espaciado superior y lateral */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+    grid-gap: 0px; /* Espacio entre tarjetas */
+    padding-bottom: 2rem; /* Espaciado inferior */
+    justify-content: center; /* Centra el contenedor en el eje horizontal */
+    text-align: center; /* Centra el texto dentro de las tarjetas */
+    align-items: center; /* Centra verticalmente las tarjetas en cada columna */
+    justify-items: center;
+    grid-row-gap: 50px;
+  }
+
+  @media screen and (max-width: 1267px) {
+    .project-container {
+      display: grid;
+      padding: 8rem 100px 0rem 100px;
+      justify-items: center;
+      grid-template-columns: repeat(3, 1fr);
+     
+      grid-row-gap: 50px;
+    }
+  }
+
+  @media screen and (max-width: 945px) {
+    .project-container {
+        display: grid;
+    
+     
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 50px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .project-container {
+        display: grid;
+      
+      grid-template-columns: 1fr;
+      grid-row-gap: 50px;
+    }
+}
