@@ -209,7 +209,8 @@
   
     @media screen and (max-width: 1000px) {
     .detalle-f {
-    max-width: 950px;
+        max-width: 90%;
+        margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center; /* Esto centrará horizontalmente */
@@ -218,43 +219,38 @@
     margin: 0 auto;
     grid-template-columns: 1fr;
     align-items: stretch;
-      }
+    }
   
   .imagenes-container img{
     justify-content: center;
     max-width: 600px;
       }
-  
+    
+    .imagenes-container {
+        
+        width: 100%;
     }
-  
-    @media screen and (max-width: 800px) {
-      .imagen-modal{
-        min-width: 600px;
-        max-width: 500px;
-        min-height: 200px;
-        min-height: 400px;
-        justify-content: center;
+
+    /* .pepe {
+        
+        padding: 5px; 
+        margin: 0; 
+        width: 95%;
+        display: flex;
         align-items: center;
-        margin-top: 100px;
-        /* overflow-y: auto; */
-      }
+        justify-content: center;
+        letter-spacing: normal; 
+        overflow-wrap: break-word;
+      
+      } */
   
     }
-  
-  
-  
-    @media screen and (max-width: 1000px) {
-      .dete{
-        padding: 10rem 0px 2rem 0px;
-      }
-      .dete h3{
-        padding: 0rem 0px 0rem 25px;
-      }
-  
-      .pepe {
-        padding: 0rem 0px 0rem 20px;
-      }
-  
+    @media screen and (max-width: 700px) {
+        .detalle-f {
+            padding: 8rem 10px 2rem 10px;
+          
+              }
+
       .imagenes-container img{
         width: 350px;
         height: auto; 
@@ -267,19 +263,17 @@
       min-height: 300px;
       justify-content: center;
       align-items: center;
-      margin-top: 100px;
-      
+      margin-top: 100px; 
     }
   
     .pepe p {
-      padding: 5px; /* Ajusta el relleno vertical y horizontal según tus necesidades */
-      margin: 0; /* Elimina el margen si no es necesario */
+      padding: 5px; 
+      margin: 0; 
       width: 95%;
       display: flex;
       align-items: center;
       justify-content: center;
-      letter-spacing: normal; /* O ajusta el valor según tus necesidades, por ejemplo, "1px" o "0.5em" */
-      overflow-wrap: break-word; /* Permite el salto de palabras si no caben en el ancho */
-      
+      letter-spacing: normal; 
+      overflow-wrap: break-word;
     }
     }
