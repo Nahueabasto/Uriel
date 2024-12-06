@@ -199,81 +199,74 @@
       border-radius: 5px;
     }
     
-
+/* 
   
     @media screen and (max-width: 1200px) {
       .imagenes-container img{
         max-width: 280px;
     }
-    }
+    } */
   
     @media screen and (max-width: 1000px) {
     .detalle-f {
-        max-width: 90%;
-        margin: auto;
+    margin: auto;
     display: flex;
-    flex-direction: column;
+   
     align-items: center; /* Esto centrará horizontalmente */
     justify-content: center; /* Esto centrará verticalmente */
     margin-bottom: 200px;
     margin: 0 auto;
-    grid-template-columns: 1fr;
+    flex-direction: column; /* Una sola columna */
     align-items: stretch;
     }
   
   .imagenes-container img{
     justify-content: center;
-    max-width: 600px;
+    /* max-width: 650px; */
       }
     
     .imagenes-container {
-        
-        width: 100%;
+        order: 2; /* Mueve la imagen al segundo lugar */
     }
 
-    /* .pepe {
-        
-        padding: 5px; 
+    .pepe {
+        max-width:  650px;
+        /* padding: 5px;  */
         margin: 0; 
-        width: 95%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        letter-spacing: normal; 
-        overflow-wrap: break-word;
-      
-      } */
-  
+        text-align: left;
+        order: 1; /* Mueve el texto al primer lugar */
+      }
     }
+
     @media screen and (max-width: 700px) {
         .detalle-f {
             padding: 8rem 10px 2rem 10px;
-          
-              }
-
-      .imagenes-container img{
-        width: 350px;
-        height: auto; 
-    }
-  
-    .imagen-modal{
-      min-width: 400px;
-      max-width: 100px;
-      min-height: 100px;
-      min-height: 300px;
-      justify-content: center;
-      align-items: center;
-      margin-top: 100px; 
-    }
-  
-    .pepe p {
-      padding: 5px; 
-      margin: 0; 
-      width: 95%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      letter-spacing: normal; 
-      overflow-wrap: break-word;
-    }
-    }
+            display: flex;
+            flex-direction: column; /* Una sola columna */
+            align-items: stretch;
+            justify-content: flex-start;
+          }
+        
+          .imagenes-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            order: 2; /* Mueve la imagen al segundo lugar */
+          }
+        
+          .imagenes-container img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+          }
+        
+          .pepe {
+            width: 100%;
+            max-width: 450px;
+            text-align: left;
+            margin-top: 1rem;
+            padding: 0 10px;
+            order: 1; /* Mueve el texto al primer lugar */
+          }
+        }
