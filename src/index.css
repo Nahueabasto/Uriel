@@ -20,7 +20,7 @@ h1{
   text-decoration: none;
 }
 h2{
-  color: rgba(61, 62, 150, 0.85);
+  color: black;
   text-decoration: none;
 }
 
@@ -67,6 +67,11 @@ ul {
   color: #fff;
   border: 2px solid white;
   transition: 0.3s;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
 }
 
 

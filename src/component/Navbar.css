@@ -248,6 +248,11 @@ width: 300px;
   background-color: rgba(0, 0, 0, 0.85)
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 .logo-container {
   display: flex;
   

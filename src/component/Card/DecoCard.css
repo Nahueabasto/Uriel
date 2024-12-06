@@ -8,13 +8,6 @@
     padding: 0rem 0 2rem 0;
   }
   
-/*   
-  .project-card {
-    border-radius: 10px;
-    overflow: hidden; 
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-  } */
   .project-card {
     border-radius: 10px; /* Borde redondeado para la tarjeta */
     overflow: hidden; /* Asegúrate de que el contenido no sobresalga */

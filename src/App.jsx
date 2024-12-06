@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Contacto from './pages/Contacto';
 import About from './pages/About';
 import Deco from './pages/Deco';
+import PageDetalle from './pages/PageDetalle';
 import Navidad from './pages/Navidad';
 import './App.css';
 
@@ -20,7 +21,7 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/deco" element={<Deco />} />
           <Route exact path="/navidad" element={<Navidad />} />
-          <Route exact path="/deco/:id" element={<Deco />} /> 
+          <Route exact path="/navidad/:id" element={<PageDetalle />} /> 
         </Routes>
       </div>
     </HashRouter>

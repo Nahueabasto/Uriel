@@ -41,7 +41,7 @@ const DataGeneral = {
     {
       id: 1,
       imgsrc: [imgpikachu],
-      name: "",
+      name: "Pikachu",
       descripcion: "Descripción para adorno navideño.",
       sesion: "Botas navideñas",
     },
