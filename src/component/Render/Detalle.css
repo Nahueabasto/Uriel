@@ -199,13 +199,13 @@
       border-radius: 5px;
     }
     
-/* 
+
   
     @media screen and (max-width: 1200px) {
       .imagenes-container img{
         max-width: 280px;
     }
-    } */
+    }
   
     @media screen and (max-width: 1000px) {
     .detalle-f {
