@@ -54,7 +54,7 @@ import './RenderCarousel.css';
 const RenderCarousel = () => {
     const [visibleCardIndex, setVisibleCardIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);
-    const cardsPerPage = 4; // Ajusta según tus necesidades
+    const [cardsPerPage, setCardsPerPage] = useState(4); // Valor inicial
 
     const items = DataGeneral.navidad || [];
 
@@ -66,15 +66,34 @@ const RenderCarousel = () => {
         });
     };
 
+    // Ajustar el número de tarjetas visibles según el ancho de la ventana
+    const updateCardsPerPage = () => {
+        const width = window.innerWidth;
+        if (width <= 837) {
+            setCardsPerPage(1);
+        } else if (width <= 1045) {
+            setCardsPerPage(2);
+        } else if (width <= 1237) {
+            setCardsPerPage(3);
+        } else {
+            setCardsPerPage(4);
+        }
+    };
+
     // Llama a la precarga cuando se monte el componente
     useEffect(() => {
         preloadImages();
+        updateCardsPerPage(); // Configurar inicialmente según el tamaño de la ventana
+        window.addEventListener('resize', updateCardsPerPage); // Escuchar cambios de tamaño
+        return () => {
+            window.removeEventListener('resize', updateCardsPerPage); // Limpiar el listener
+        };
     }, [items]);
 
     const handleNextClick = () => {
         if (!isTransitioning) {
             setIsTransitioning(true);
-            setVisibleCardIndex((prevIndex) => (prevIndex + 1) % items.length);
+            setVisibleCardIndex((prevIndex) => (prevIndex + cardsPerPage) % items.length);
         }
     };
 
@@ -82,7 +101,7 @@ const RenderCarousel = () => {
         if (!isTransitioning) {
             setIsTransitioning(true);
             setVisibleCardIndex(
-                (prevIndex) => (prevIndex - 1 + items.length) % items.length
+                (prevIndex) => (prevIndex - cardsPerPage + items.length) % items.length
             );
         }
     };
@@ -141,5 +160,6 @@ const RenderCarousel = () => {
 };
 
 export default RenderCarousel;
+
 
 
