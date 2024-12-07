@@ -33,11 +33,3 @@
     background-color: #e0e0e0;
   }
   
-  .project-details {
-    padding: 10px;
-    background-color: #e0e0e0; /* Color de fondo gris para el área de texto */
-    text-align: center;
-    border-radius: 0px 0px 10px 10px; /* Borde redondeado en la parte inferior */
-    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho */
-  }
- 

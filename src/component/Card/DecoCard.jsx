@@ -72,7 +72,7 @@ const DecoCard = (props) => {
             <p>No hay imagen disponible</p>
           </div>
         )}
-        <div className="project-details" style={{ padding: '10px', backgroundColor: '#e0e0e0', textAlign: 'center', borderRadius: '0px 0px 10px 10px' }}>
+        <div className="project-details" style={{ padding: '0px', backgroundColor: '#e0e0e0', textAlign: 'center', borderRadius: '0px 0px 10px 10px' }}>
           <p className="project-title">{props.name}</p>
         </div>
       </Link>
