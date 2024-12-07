@@ -74,17 +74,15 @@ const RenderCarousel = () => {
     const handleNextClick = () => {
         if (!isTransitioning) {
             setIsTransitioning(true);
-            setVisibleCardIndex((prevIndex) =>
-                (prevIndex + 1) % items.length
-            );
+            setVisibleCardIndex((prevIndex) => (prevIndex + 1) % items.length);
         }
     };
 
     const handlePrevClick = () => {
         if (!isTransitioning) {
             setIsTransitioning(true);
-            setVisibleCardIndex((prevIndex) =>
-                (prevIndex - 1 + items.length) % items.length
+            setVisibleCardIndex(
+                (prevIndex) => (prevIndex - 1 + items.length) % items.length
             );
         }
     };
@@ -93,13 +91,17 @@ const RenderCarousel = () => {
         setIsTransitioning(false);
     }, [visibleCardIndex]);
 
-    const startIndex = visibleCardIndex;
-    const endIndex = (visibleCardIndex + cardsPerPage) % items.length;
-    const visibleCards = items.slice(startIndex, startIndex + cardsPerPage);
+    // Lógica para calcular las tarjetas visibles, haciendo que el carrusel sea circular
+    const getVisibleCards = () => {
+        let visibleCards = [];
+        for (let i = 0; i < cardsPerPage; i++) {
+            const index = (visibleCardIndex + i) % items.length;
+            visibleCards.push(items[index]);
+        }
+        return visibleCards;
+    };
 
-    while (visibleCards.length < cardsPerPage) {
-        visibleCards.push(null);
-    }
+    const visibleCards = getVisibleCards();
 
     return (
         <div className="paginado-container">
