@@ -55,6 +55,8 @@
   .pagination-button:hover:not(:disabled) {
     background-color: #FFD700; /* Cambia el color a amarillo al pasar el mouse */
     color: black; /* Cambia el texto a negro para mejor visibilidad */
+    outline: none; /* Evita que se vea el contorno cuando se hace clic o toque */
+    user-select: none;
 }
   
 
