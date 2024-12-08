@@ -54,7 +54,7 @@ import './RenderCarousel.css';
 const RenderCarousel = () => {
     const [visibleCardIndex, setVisibleCardIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);
-    const [cardsPerPage, setCardsPerPage] = useState(4); // Valor inicial
+    const [cardsPerPage, setCardsPerPage] = useState(4);
 
     const items = DataGeneral.navidad || [];
 
@@ -62,7 +62,7 @@ const RenderCarousel = () => {
     const preloadImages = () => {
         items.forEach((item) => {
             const img = new Image();
-            img.src = item.imgsrc; // Asegúrate de que el atributo `imgsrc` sea correcto
+            img.src = item.imgsrc;
         });
     };
 
@@ -83,36 +83,39 @@ const RenderCarousel = () => {
     // Llama a la precarga cuando se monte el componente
     useEffect(() => {
         preloadImages();
-        updateCardsPerPage(); // Configurar inicialmente según el tamaño de la ventana
-        window.addEventListener('resize', updateCardsPerPage); // Escuchar cambios de tamaño
+        updateCardsPerPage();
+        window.addEventListener('resize', updateCardsPerPage);
         return () => {
-            window.removeEventListener('resize', updateCardsPerPage); // Limpiar el listener
+            window.removeEventListener('resize', updateCardsPerPage);
         };
     }, [items]);
 
+    // Maneja el clic del botón de siguiente
     const handleNextClick = () => {
         if (!isTransitioning) {
             setIsTransitioning(true);
-            setVisibleCardIndex((prevIndex) => (prevIndex + cardsPerPage) % items.length);
+            setVisibleCardIndex((prevIndex) => (prevIndex + 1) % items.length);
         }
     };
 
+    // Maneja el clic del botón de anterior
     const handlePrevClick = () => {
         if (!isTransitioning) {
             setIsTransitioning(true);
-            setVisibleCardIndex(
-                (prevIndex) => (prevIndex - cardsPerPage + items.length) % items.length
+            setVisibleCardIndex((prevIndex) =>
+                (prevIndex - 1 + items.length) % items.length
             );
         }
     };
 
+    // Restablece la transición después de que el índice cambia
     useEffect(() => {
         setIsTransitioning(false);
     }, [visibleCardIndex]);
 
-    // Lógica para calcular las tarjetas visibles, haciendo que el carrusel sea circular
+    // Obtén las tarjetas visibles
     const getVisibleCards = () => {
-        let visibleCards = [];
+        const visibleCards = [];
         for (let i = 0; i < cardsPerPage; i++) {
             const index = (visibleCardIndex + i) % items.length;
             visibleCards.push(items[index]);
@@ -124,7 +127,9 @@ const RenderCarousel = () => {
 
     return (
         <div className="paginado-container">
-            <h3 className="left-align" style={{ color: "black", fontWeight: "bold" }}>Botas navideñas</h3>
+            <h3 className="left-align" style={{ color: "black", fontWeight: "bold" }}>
+                Botas navideñas
+            </h3>
             <div className="cards-container">
                 <button
                     className="pagination-button"
@@ -160,6 +165,8 @@ const RenderCarousel = () => {
 };
 
 export default RenderCarousel;
+
+
 
 
 
