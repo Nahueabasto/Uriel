@@ -42,10 +42,14 @@
     font-size: 18px;
     color: black;
     cursor: pointer;
-    
+    user-select: none;
     align-items: center;
     display: flex;
     justify-content: center;
+  }
+
+  .pagination-button:active {
+    outline: none; /* Evita que se vea el contorno cuando se hace clic o toque */
   }
 
   .pagination-button:hover:not(:disabled) {
