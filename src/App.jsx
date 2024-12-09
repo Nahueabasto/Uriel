@@ -21,7 +21,7 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/deco" element={<Deco />} />
           <Route exact path="/navidad" element={<Navidad />} />
-          <Route exact path="/navidad/:id" element={<PageDetalle />} /> 
+          <Route exact path="/:categoria/:id" element={<PageDetalle />} /> 
         </Routes>
       </div>
     </HashRouter>

@@ -6,14 +6,17 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useSwipeable } from 'react-swipeable';
 
 
-
   const Detalle = () => {
     const { id, categoria } = useParams();
     const [imagenActual, setImagenActual] = useState(0);
     const [modalVisible, setModalVisible] = useState(false);
   
     // Busca el servicio en la categoría
-    const casa = DataGeneral["navidad"]?.find((item) => item.id === Number(id));
+    // const casa = DataGeneral["navidad"]?.find((item) => item.id === Number(id));
+    console.log("ID:", id, "Categoría:", categoria);
+
+    // Busca el servicio en la categoría
+    const casa = DataGeneral[categoria]?.find((item) => item.id === Number(id));
   
     if (!casa) {
       console.log("Producto no encontrado", id, categoria);
