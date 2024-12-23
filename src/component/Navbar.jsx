@@ -287,11 +287,14 @@ import EmailIcon from '@mui/icons-material/Email';
 import img from "../img/completa.png";
 import cults from "../img/cults.png";
 import "./Navbar.css";
+import "./SearchBar.css";
 import TelegramIcon from '@mui/icons-material/Telegram';
 // import { Close as CloseIcon, Menu as MenuIcon } from '@mui/icons-material';
+import { useSearch } from "../Context/SearchProvider";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const { searchQuery, setSearchQuery } = useSearch();
   
   const handleClick = () => {
     setClick(!click);
@@ -450,7 +453,9 @@ const Navbar = () => {
      
     {/* </div> */}
     <div className="search-container">
-        <input type="text" placeholder="Buscar..." className="search-input" />
+        <input type="text" placeholder="Buscar..." className="search-input"
+        alue={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)} />
       </div>
       <div className="icons">
         <a href="https://t.me/Pipa187" target="_blank" rel="noopener noreferrer">

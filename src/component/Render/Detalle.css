@@ -36,7 +36,9 @@
     overflow-wrap: break-word; /* Permite el salto de palabras si no caben en el ancho */
     word-wrap: break-word; /* Otra propiedad relacionada con el salto de palabras */
     max-width: 100%; /* Limita el ancho máximo para evitar que las palabras se salgan de los márgenes */
-    justify-content: left;
+    /* justify-content: left; */
+    justify-content: center;
+    padding: 0px 30px;
   }
 
   .pepe h2{
@@ -211,7 +213,6 @@
     .detalle-f {
     margin: auto;
     display: flex;
-   
     align-items: center; /* Esto centrará horizontalmente */
     justify-content: center; /* Esto centrará verticalmente */
     margin-bottom: 200px;
